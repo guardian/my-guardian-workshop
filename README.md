@@ -1,4 +1,4 @@
-# ada-lovelace-day-workshop
+# My Guardian workshop
 
 To run, checkout the repository and create a file called api-keyfile.js with the following line in it:
 
