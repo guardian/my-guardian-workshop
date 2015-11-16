@@ -1,0 +1,69 @@
+html *
+{
+   font-family: Georgia;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #005689;
+    margin-top: 0;
+}
+
+.header-logo {
+    text-align: right;
+    margin-right: 5%;
+    font-size: 55pt;
+
+}
+
+.guardian-light-blue-text {
+    color: #AADCE6;
+    font-family: "Georgia";
+}
+
+.guardian-white-text {
+    color: #FFFFFF;
+    font-family: "Georgia";
+}
+
+h1 {
+    margin-left: 20px;
+    font-family: "Georgia";
+    color: #00456E;
+}
+
+.fade
+{
+        opacity:1;
+}
+
+.fade:hover
+{
+        opacity:1;
+}
+
+.color:hover
+{
+        background:#53a7ea;
+}
+
+.circle:hover
+{
+        border-radius:10%;
+}
+
+.rotate:hover
+{
+        transform: rotateZ(-5deg);
+}
+
+.shrink:hover
+{
+        transform: scale(0.5);
+}
+
+.grow:hover
+{
+        transform: scale(1.3);
+}

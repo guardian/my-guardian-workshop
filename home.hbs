@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <!--This is the title of your page, which will appear in the name of the tab. Change it to anything you like! -->
+    <title>My Guardian</title>
+    <!--
+    These are stylesheets which help make the page look good
+       - 'bootstrap' helps lay things out neatly on the page
+       - 'style.css' is a style you can change yourself to change how the page looks
+    -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+<div class="col-md-12 header">
+    <div class="header-logo">
+        <!-- This is the text for the guardian logo. You can change it to anything you like. -->
+        <span class="guardian-light-blue-text">phil's</span><span class="guardian-white-text">guardian</span>
+    </div>
+</div>
+
+<!-- this is the box of 3 articles   -->
+<script id="article-list" type="text/x-handlebars-template">
+<!-- this is the heading of the article box  -->
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{ sectionName }}</h1>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="article-container col-md-12">
+            <div class="row">
+                {{#each articleList as |article|}}
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                    <!-- put the article image here  -->
+                        <div class="caption">
+                            <h3>
+                                <!-- this is the article headline  -->
+                                {{ article.headline }}
+                            </h3>
+
+                            <p>
+                                <!-- put the article trail text here -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+
+<!--These are bits of code made by other people to help make the page look good and work properly-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="api-keyfile.js"></script>
+<script type="text/javascript" src="uglyscript.js"></script>
+<!-- This is the code that you will edit today -->
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
