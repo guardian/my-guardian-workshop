@@ -49,7 +49,6 @@ function sleep(milliseconds) {
 }
 
 function apiRequest(url, pageSize) {
-    console.log("Content API Query", addApiParameters(url, API_KEY, pageSize))
     return jQuery.get(addApiParameters(url, API_KEY, pageSize))
 }
 
