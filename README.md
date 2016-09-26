@@ -1,6 +1,6 @@
 # My Guardian workshop
 
-To get started, first create and api-key.js file using the provided setup-key.sh script:
+To get started, first create an api-key.js file using the provided setup-key.sh script:
 
 `./setup-key.sh my-contentapi-key`
 
