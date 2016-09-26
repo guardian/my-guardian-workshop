@@ -8,9 +8,9 @@ function getInterestingFields(contentItem){
     }
 }
 
-function addRowOfNews(rowSubject){
+function addRowOfNews(rowSubject, numberOfItems = 3){
     var contentApiQuery = encodeURIComponent(rowSubject);
-    return addContentList(rowSubject, "http://content.guardianapis.com/search?show-fields=all&show-elements=all&q="+contentApiQuery, 3);
+    return addContentList(rowSubject, "http://content.guardianapis.com/search?show-fields=all&show-elements=all&q="+contentApiQuery, numberOfItems);
 }
 
 function makeContentApiUrlFromGuardianUrl(guardianUrl) {
@@ -19,7 +19,7 @@ function makeContentApiUrlFromGuardianUrl(guardianUrl) {
 }
 
 // This adds the top 3 articles from a content api search result. Try changing the URL to something else
-addRowOfNews("Harry Potter")
+addRowOfNews("Harry Potter", 3)
 
 // we sleep (pause) here to make sure that everything is added in the right order
 sleep(500);
