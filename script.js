@@ -1,10 +1,11 @@
 function getInterestingFields(contentItem){
-    //console.log(contentItem); <<< might be useful to explain how to finish the below block off
+    console.log(contentItem); //<<< might be useful to explain how to finish the below block off
     var mainImage = getImageFromElements(contentItem.elements)
     return {
         headline: contentItem.fields.headline,
         trailText: contentItem.fields.trailText,
-        mainImage: mainImage ? mainImage : contentItem.fields.thumbnail
+        mainImage: mainImage ? mainImage : contentItem.fields.thumbnail,
+        byline:  contentItem.fields.byline ? contentItem.fields.byline : 'unknown'
     }
 }
 
@@ -19,7 +20,7 @@ function makeContentApiUrlFromGuardianUrl(guardianUrl) {
 }
 
 // This adds the top 3 articles from a content api search result. Try changing the URL to something else
-addRowOfNews("Harry Potter", 3)
+addRowOfNews("Chocolate", 3)
 
 // we sleep (pause) here to make sure that everything is added in the right order
 sleep(500);

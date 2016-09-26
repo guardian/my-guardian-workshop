@@ -37,15 +37,15 @@
                 {{#each articleList as |article|}}
                 <div class="col-md-4">
                     <div class="thumbnail">
-                    <!-- put the article image here  -->
+                    <img class="fade circle" alt="Main article image" src="{{article.mainImage}}" />
                         <div class="caption">
                             <h3>
                                 <!-- this is the article headline  -->
-                                {{ article.headline }}
+                                {{ article.headline }} by {{article.byline}}
                             </h3>
 
                             <p>
-                                <!-- put the article trail text here -->
+                                {{{ article.trailText }}}
                             </p>
                         </div>
                     </div>
