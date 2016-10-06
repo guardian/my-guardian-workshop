@@ -65,7 +65,7 @@ function addContentList(sectionName, apiUrl, pageSize) {
 
 function addContentItems(sectionName, apiUrls) {
     var capiResponses = apiUrls.map(function(url) {
-        return apiRequest(url+"&").then(function(response) {
+        return apiRequest(url+"?").then(function(response) {
             return getInterestingFields(response.response.content);
         })
     })
