@@ -35,7 +35,7 @@ function getImageFromElements(elements) {
 
 function addApiParameters(url, key, pageSize) {
     var pageSize = pageSize || 3;
-    return url + 'show-elements=image&tag=type/article&api-key=' + key + '&page-size=' + pageSize;
+    return url + 'show-elements=image&show-fields=all&tag=type/article&api-key=' + key + '&page-size=' + pageSize;
 }
 
 
