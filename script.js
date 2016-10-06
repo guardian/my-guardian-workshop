@@ -16,7 +16,7 @@ function addRowOfNews(rowSubject, numberOfItems = 3){
 
 function makeContentApiUrlFromGuardianUrl(guardianUrl) {
     var contentApiURL = guardianUrl.replace("www.theguardian", "content.guardianapis")
-    return contentApiURL + "?show-fields=all&show-elements=all"
+    return contentApiURL;
 }
 
 // This adds the top 3 articles from a content api search. Try changing "Harry Potter" to something else.
@@ -28,7 +28,7 @@ sleep(500);
 
 // Here, you can choose specific pieces of content to add to your page. 
 addContentItems("Selected News", [
-    "https://content.guardianapis.com/lifeandstyle/2015/oct/02/are-these-the-10-worst-board-games-of-all-time?",
-    "https://content.guardianapis.com/education/2016/mar/27/tom-bennett-behaviour-schools-teaching-hunger-games?",
-    "https://content.guardianapis.com/lifeandstyle/womens-blog/2016/mar/03/my-great-grandmother-emmeline-pankhurst-would-still-be-fighting-for-equality-today?"
+    "https://content.guardianapis.com/lifeandstyle/2015/oct/02/are-these-the-10-worst-board-games-of-all-time",
+    "https://content.guardianapis.com/education/2016/mar/27/tom-bennett-behaviour-schools-teaching-hunger-games",
+    "https://content.guardianapis.com/lifeandstyle/womens-blog/2016/mar/03/my-great-grandmother-emmeline-pankhurst-would-still-be-fighting-for-equality-today"
     ])
