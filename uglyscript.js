@@ -74,3 +74,8 @@ function addContentItems(sectionName, apiUrls) {
         $('body').append(articleBlockTemplate({articleList: articles, sectionName: sectionName}));
     })
 }
+
+function makeContentApiUrlFromGuardianUrl(guardianUrl) {
+    var contentApiURL = guardianUrl.replace("www.theguardian", "content.guardianapis")
+    return contentApiURL;
+}
