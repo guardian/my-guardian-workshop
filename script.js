@@ -8,7 +8,7 @@ function getInterestingFields(contentItem){
     }
 }
 
-function addRowOfNews(rowSubject, numberOfItems = 3){
+function addRowOfNews(rowSubject, numberOfItems){
     var contentApiQuery = encodeURIComponent(rowSubject);
     return addContentList(rowSubject, "http://content.guardianapis.com/search?q="+contentApiQuery, numberOfItems);
 }
