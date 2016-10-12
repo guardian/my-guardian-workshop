@@ -6,6 +6,8 @@ To get started, first create an api-key.js file using the provided setup-key.sh 
 
  Then you should be able to open home.hbs in a browser and get a sample page. This project uses handlebars.js, bootstrap 3 and jquery.
 
+You might find the [slides](https://docs.google.com/presentation/d/1esH3pREGDiS3xLx8xm_J4n8zcXloLTg-HWBwvhxLSLc/edit#slide=id.g179782eb9d_1_8) and [script](https://docs.google.com/document/d/1HyrYoc9qoLna6t6dQIsWrNmYZWq8_rl7ZN3IMeVSu9Y/edit) we used to introuduce the tasks when we ran ada lovelace day this year useful. 
+
 Things to do during the workshop:
  - Start off by opening home.hbs in a web browser (recommended google chrome or firefox) - you should get to a page showing 6 headlines. If you don't get this, for example if the page is blank, there's likely a problem with your content api key.
  - Next, modify home.hbs so that instead of saying phil's guardian, it says 'yourname's guardian' or something similar
