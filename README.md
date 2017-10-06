@@ -23,8 +23,7 @@ Things to do during the workshop:
 
 - You might also want to add who wrote the article. Alternatively, we could make the page a bit more interesting with some CSS!
 
- - To get started with css, open `style.css`. The first thing I suggest you do is to try change the text colour  - replace '
- `#00456E` with a new colour, e.g. `red`.
+ - To get started with css, open `style.css`. The first thing I suggest you do is to try change the text colour  - replace `#00456E` with a new colour, e.g. `red`.
  - To make the images change when the mouse is over them, you could start by changing the opacity of `.fade:hover` to a number between 0 and 1, then see what happens.
  - To introduce more effects to images, you'll need to add extra classes to your image. Try adding the circle class.
 
