@@ -27,4 +27,4 @@ Things to do during the workshop:
  - To make the images change when the mouse is over them, you could start by changing the opacity of `.fade:hover` to a number between 0 and 1, then see what happens.
  - To introduce more effects to images, you'll need to add extra classes to your image. Try adding the circle class.
 
- - Hopefully you've learned enough by now to try some things out for yourself. And remember, if you get stuck, just google your problem! (Or get in touch with me - philip.mcmahon [at] guardian.co.uk.
+ - Hopefully you've learned enough by now to try some things out for yourself. And remember, if you get stuck, just google your problem! (Or get in touch with me - philip.mcmahon [at] guardian.co.uk).
