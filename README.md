@@ -19,7 +19,7 @@ Things to do during the workshop:
  
  - By uncommenting `addContentItems`, you can also add a row of specific Guardian stories
 
- - Now you've got the news you want. lets make it a bit more interesting - most websites have links on them, and yours should be no different. Modify the headline of each article so that it links to that story. To do this you'll need to first modify `getInterestingFields` in `script.js` so that it extracts the url from the content api response. The best way to work out how to do this is to look at a page from the content api, and look for the webURL field, e.g. https://content.guardianapis.com/lifeandstyle/2015/oct/02/are-these-the-10-worst-board-games-of-all-time?show-fields=all&show-elements=all&api-key=test
+ - Now you've got the news you want. Let's make it a bit more interesting - most websites have links on them, and yours should be no different. Modify the headline of each article so that it links to that story. To do this you'll need to first modify `getInterestingFields` in `script.js` so that it extracts the url from the content api response. The best way to work out how to do this is to look at a page from the content api, and look for the webURL field, e.g. https://content.guardianapis.com/lifeandstyle/2015/oct/02/are-these-the-10-worst-board-games-of-all-time?show-fields=all&show-elements=all&api-key=test
 
 - You might also want to add who wrote the article. Alternatively, we could make the page a bit more interesting with some CSS!
 
