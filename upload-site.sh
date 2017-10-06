@@ -7,7 +7,7 @@ AWS_SECRET_ACCESS_KEY=FKSxv9BF0c4WLsQLoQd9Xr8as91JXu2djxxOmSKF
 
 if [ $# -ne 1 ]
 then
-    echo "Enter your name with no spaces after upload-site.sh"
+    echo "Enter your full name all lowercase with no spaces (you can use hyphens instead) after upload-site.sh"
     exit
 fi
     
