@@ -16,7 +16,8 @@ Things to do during the workshop:
 - You should now have a page with 6 stories in it with a headline, image and summary.
 
  - A fun thing to do now might be to change the types of stories that are appearing on the page. You can do this by modifying `script.js` - you should be able to find a line which says `addRowOfNews("Harry Potter", 3)` - this means 'add a row of news about harry potter with 3 items in it'. Try changing these values and seeing what happens.
- - You can also modify the stories at the bottom, by finding different pages on theguardian.com that you want to use.
+ 
+ - By uncommenting `addContentItems`, you can also add a row of specific Guardian stories
 
  - Now you've got the news you want. lets make it a bit more interesting - most websites have links on them, and yours should be no different. Modify the headline of each article so that it links to that story. To do this you'll need to first modify `getInterestingFields` in `script.js` so that it extracts the url from the content api response. The best way to work out how to do this is to look at a page from the content api, and look for the webURL field, e.g. https://content.guardianapis.com/lifeandstyle/2015/oct/02/are-these-the-10-worst-board-games-of-all-time?show-fields=all&show-elements=all&api-key=test
 
