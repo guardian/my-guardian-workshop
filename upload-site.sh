@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# These keys are for a temporary user with S3 permission which will
+# only be valid on Ada Lovelace Day 2017
 AWS_ACCESS_KEY_ID=AKIAJ2JMTEPDELFJODNA
 AWS_SECRET_ACCESS_KEY=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
 
