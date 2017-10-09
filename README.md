@@ -9,10 +9,10 @@ To get started, first create an api-key.js file using the provided setup-key.sh 
 You might find the [slides](https://docs.google.com/presentation/d/1esH3pREGDiS3xLx8xm_J4n8zcXloLTg-HWBwvhxLSLc/edit#slide=id.g179782eb9d_1_8) and [script](https://docs.google.com/document/d/1HyrYoc9qoLna6t6dQIsWrNmYZWq8_rl7ZN3IMeVSu9Y/edit) we used to introuduce the tasks when we ran ada lovelace day this year useful. 
 
 Things to do during the workshop:
- - Start off by opening `home.html` in a web browser (recommended google chrome or firefox) - you should get to a page showing 6 headlines. If you don't get this, for example if the page is blank, there's likely a problem with your content api key.
- - Next, modify `home.html` so that instead of saying phil's guardian, it says 'yourname's guardian' or something similar
+ - Start off by opening `index.html` in a web browser (recommended google chrome or firefox) - you should get to a page showing 6 headlines. If you don't get this, for example if the page is blank, there's likely a problem with your content api key.
+ - Next, modify `index.html` so that instead of saying phil's guardian, it says 'yourname's guardian' or something similar
  - Next, get the trail text to show underneath the headlines - there's a marked place to add this in `home.html`. You can work out how to do this by looking at how it's done for headline, then looking in `script.js` at `getInterestingFields` in `script.js` to see what fields you have available.
- - Next, add images to the page. There is a marked place to do this in `home.html`, you might find the html in 'useful code snippets' useful
+ - Next, add images to the page. There is a marked place to do this in `index.html`, you might find the html in 'useful code snippets' useful
 - You should now have a page with 6 stories in it with a headline, image and summary.
 
  - A fun thing to do now might be to change the types of stories that are appearing on the page. You can do this by modifying `script.js` - you should be able to find a line which says `addRowOfNews("Harry Potter", 3)` - this means 'add a row of news about harry potter with 3 items in it'. Try changing these values and seeing what happens.
