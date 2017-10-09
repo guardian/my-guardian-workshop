@@ -2,7 +2,7 @@
 
 To get started, first create an api-key.js file using the provided setup-key.sh script:
 
-`./setup-key.sh my-contentapi-key`
+`./setup-key.sh <YOUR-CONTENT-API-KEY-GOES-HERE>`
 
  Then you should be able to open home.hbs in a browser and get a sample page. This project uses handlebars.js, bootstrap 3 and jquery.
 
