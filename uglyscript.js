@@ -17,6 +17,11 @@ if (jQuery.when.all===undefined) {
     }
 }
 
+function getImage(content) {
+    if (content.elements) getImageFromElements(content.elements);
+    else return "https://media.giphy.com/media/l4KibK3JwaVo0CjDO/giphy.gif";
+}
+
 function getImageFromElements(elements) {
     var mainImageElements =  elements.filter(function(element) {
             return element.relation === "main" && element.type === "image";
@@ -30,7 +35,7 @@ function getImageFromElements(elements) {
             return mainImage.file
         }
     }
-    return null;
+    return "https://media.giphy.com/media/l4KibK3JwaVo0CjDO/giphy.gif";
 }
 
 function addApiParameters(url, key, pageSize) {
