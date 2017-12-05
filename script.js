@@ -1,6 +1,6 @@
 function getInterestingFields(contentItem){
     //console.log(contentItem);
-    var mainImage = getImageFromElements(contentItem.elements)
+    var mainImage = getImage(contentItem);
     return {
         headline: contentItem.fields.headline,
         trailText: contentItem.fields.trailText,

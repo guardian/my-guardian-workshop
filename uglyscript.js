@@ -1,5 +1,7 @@
 var articleBlockSource = $("#article-list").html();
 var articleBlockTemplate = Handlebars.compile(articleBlockSource);
+// This is, of course, a cat toboganning down the stairs
+var fallbackImage = "https://media.giphy.com/media/l4KibK3JwaVo0CjDO/giphy.gif";
 
 // Put somewhere in your scripting environment
 if (jQuery.when.all===undefined) {
@@ -17,6 +19,11 @@ if (jQuery.when.all===undefined) {
     }
 }
 
+function getImage(content) {
+    if (content.elements) getImageFromElements(content.elements);
+    else return fallbackImage;
+}
+
 function getImageFromElements(elements) {
     var mainImageElements =  elements.filter(function(element) {
             return element.relation === "main" && element.type === "image";
@@ -30,7 +37,7 @@ function getImageFromElements(elements) {
             return mainImage.file
         }
     }
-    return null;
+    return fallbackImage;
 }
 
 function addApiParameters(url, key, pageSize) {
