@@ -1,5 +1,3 @@
-var articleBlockSource = $("#article-list").html();
-var articleBlockTemplate = Handlebars.compile(articleBlockSource);
 // This is, of course, a cat toboganning down the stairs
 var fallbackImage = "https://media.giphy.com/media/l4KibK3JwaVo0CjDO/giphy.gif";
 
@@ -65,22 +63,22 @@ function addContentList(sectionName, apiUrl, pageSize) {
             return getInterestingFields(result);
         });
         console.log(sectionName + ":", articles);
-        $('body').append(articleBlockTemplate({articleList: articles, sectionName: sectionName}));
-        return articles;
+        putContentInPage(sectionName, articles);
     })
 }
 
-function addContentItems(sectionName, apiUrls) {
-    var capiResponses = apiUrls.map(function(url) {
-        return apiRequest(url+"?").then(function(response) {
-            return getInterestingFields(response.response.content);
-        })
-    })
-    return $.when.all(capiResponses).then(function(articles) {
-        console.log(sectionName + ":", articles);
-        $('body').append(articleBlockTemplate({articleList: articles, sectionName: sectionName}));
-    })
-}
+
+// function addContentItems(sectionName, apiUrls) {
+//     var capiResponses = apiUrls.map(function(url) {
+//         return apiRequest(url+"?").then(function(response) {
+//             return getInterestingFields(response.response.content);
+//         })
+//     })
+//     return $.when.all(capiResponses).then(function(articles) {
+//         console.log(sectionName + ":", articles);
+//         $('body').append(articleBlockTemplate({articleList: articles, sectionName: sectionName}));
+//     })
+// }
 
 function makeContentApiUrlFromGuardianUrl(guardianUrl) {
     var contentApiURL = guardianUrl.replace("www.theguardian", "content.guardianapis")
