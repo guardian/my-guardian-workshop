@@ -5,9 +5,10 @@ html *
 
 .header {
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: #005689;
     margin-top: 0;
+    padding-bottom: 2px;
 }
 
 .header-logo {
@@ -35,12 +36,14 @@ h1 {
 
 .guardian-slogan {
     font-family: "Arial";
-    font-size: 16pt;
+    font-size: 9pt;
 }
 
 .fade {
     opacity:1;
 }
+
+/* TASK 10B: try adding these classes to the different elements in the html */
 
 .fade:hover {
     opacity:1;
@@ -65,3 +68,5 @@ h1 {
 .grow:hover {
     transform: scale(1.3);
 }
+
+/* TASK 10C: create a new class and add a transform effect to it. Find some here: https://developer.mozilla.org/en-US/docs/Web/CSS/transform */

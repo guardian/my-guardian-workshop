@@ -59,10 +59,10 @@ function apiRequest(url, pageSize) {
 
 function addContentList(sectionName, apiUrl, pageSize) {
     return apiRequest(apiUrl+"&", pageSize).then(function(response) {
+        console.log("Section name: ", sectionName)
         articles = response.response.results.map(function (result) {
             return getInterestingFields(result);
         });
-        console.log(sectionName + ":", articles);
         putContentInPage(sectionName, articles);
     })
 }
