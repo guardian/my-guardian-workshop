@@ -16,7 +16,7 @@ if (jQuery.when.all===undefined) {
             });
 
         return deferred;
-    }
+    };
 }
 
 function getImage(content) {
@@ -27,14 +27,14 @@ function getImage(content) {
 function getImageFromElements(elements) {
     var mainImageElements =  elements.filter(function(element) {
             return element.relation === "main" && element.type === "image";
-        })[0]
+        })[0];
     if (mainImageElements) {
         var mainImage = mainImageElements.assets.filter(function(asset) {
             // console.log("asset", asset.typeData.width)
             return asset.typeData.width > 600;
-        })[0]
+        })[0];
         if (mainImage) {
-            return mainImage.file
+            return mainImage.file;
         }
     }
     return fallbackImage;
@@ -67,19 +67,19 @@ function addContentList(sectionName, apiUrl, pageSize) {
         console.log(sectionName + ":", articles);
         $('body').append(articleBlockTemplate({articleList: articles, sectionName: sectionName}));
         return articles;
-    })
+    });
 }
 
 function addContentItems(sectionName, apiUrls) {
     var capiResponses = apiUrls.map(function(url) {
         return apiRequest(url+"?").then(function(response) {
             return getInterestingFields(response.response.content);
-        })
-    })
+        });
+    });
     return $.when.all(capiResponses).then(function(articles) {
         console.log(sectionName + ":", articles);
         $('body').append(articleBlockTemplate({articleList: articles, sectionName: sectionName}));
-    })
+    });
 }
 
 function makeContentApiUrlFromGuardianUrl(guardianUrl) {

@@ -1,22 +1,21 @@
-function getInterestingFields(contentItem){
-    //console.log(contentItem);
-    var mainImage = getImage(contentItem);
+function getInterestingFields(content){
+    var mainImage = getImage(content);
     return {
-        headline: contentItem.fields.headline,
-        trailText: contentItem.fields.trailText,
-        mainImage: mainImage ? mainImage : contentItem.fields.thumbnail
+        headline: content.fields.headline,
+        trailText: content.fields.trailText,
+        mainImage: mainImage
     }
 }
 
-function addRowOfNews(rowSubject, numberOfItems){
+function addRowOfNews(rowSubject, numberOfItems) {
     var contentApiQuery = encodeURIComponent(rowSubject);
-    return addContentList(rowSubject, "http://content.guardianapis.com/search?q="+contentApiQuery, numberOfItems);
+    return addContentList(rowSubject, "http://content.guardianapis.com/search?q=" + contentApiQuery, numberOfItems);
 }
 
-// This adds the top 3 articles from a content api search. Try changing "Harry Potter" to something else.
-addRowOfNews("Harry Potter", 3)
+// This adds the top 3 articles from a content api search. Try changing "Technology" to something else.
+addRowOfNews("Autumn", 3);
 
-addRowOfNews("Coding", 3)
+addRowOfNews("Technology", 3);
 
 
 // You could use the block below to add specific stories rather than just the top 3 from a certain topic
