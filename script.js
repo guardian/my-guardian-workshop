@@ -1,5 +1,5 @@
 function getInterestingFields(content){
-    const mainImage = getImage(content);
+    var mainImage = getImage(content);
     return {
         headline: content.fields.headline,
         trailText: content.fields.trailText,
@@ -7,9 +7,9 @@ function getInterestingFields(content){
     }
 }
 
-function addRowOfNews(rowSubject, numberOfItems){
-    const contentApiQuery = encodeURIComponent(rowSubject);
-    return addContentList(rowSubject, `http://content.guardianapis.com/search?q=${contentApiQuery}`, numberOfItems);
+function addRowOfNews(rowSubject, numberOfItems) {
+    var contentApiQuery = encodeURIComponent(rowSubject);
+    return addContentList(rowSubject, "http://content.guardianapis.com/search?q=" + contentApiQuery, numberOfItems);
 }
 
 // This adds the top 3 articles from a content api search. Try changing "Technology" to something else.
