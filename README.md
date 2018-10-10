@@ -31,6 +31,9 @@ Things to do during the workshop:
  - To get started with css, open `style.css`. The first thing I suggest you do is to try change the text colour  - replace `#00456E` with a new colour, e.g. `red`.
  - To make the images change when the mouse is over them, you could start by changing the opacity of `.fade:hover` to a number between 0 and 1, then see what happens. Make sure the images have the class necessary to apply the styling properties. You could also try adding the styling directly in the HTML - why might this be a bad idea?
  - To introduce more effects to images, you'll need to add extra classes to your image. Try adding the circle class.
+ 
+## Getting your site online
+If you've got access to Amazon S3 you could use the `upload-site.sh` script to push the code to an S3 bucket. You'll need to set that bucket up for static website hosting for it to correctly serve your site. 
 
 ## Conclusion
  - Hopefully you've learned enough by now to try some things out for yourself. And remember, if you get stuck, just google your problem! (Or get in touch with me - philip.mcmahon [at] guardian.co.uk).
