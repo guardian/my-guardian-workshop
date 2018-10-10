@@ -1,6 +1,9 @@
 #!/bin/sh
 
 # Here you need keys for an aws IAM user with ListBucket,PutObject and PutObjectAcl permissions for the developer playground account
+# WARNING: this is included as an example but you should not put your AWS credentials in this file - better to just export them
+# to your terminal, to avoid accidentally pushing them to github
+
 export AWS_ACCESS_KEY_ID=<aws-access-key>
 export AWS_SECRET_ACCESS_KEY=<aws-secret-key>
 
