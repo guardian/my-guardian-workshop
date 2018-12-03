@@ -1,9 +1,8 @@
 function getInterestingFields(content){
-    var mainImage = getImage(content);
     return {
         headline: content.fields.headline,
         trailText: content.fields.trailText,
-        mainImage: mainImage
+        mainImage: content.fields.thumbnail
     }
 }
 
