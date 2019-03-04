@@ -15,6 +15,8 @@ If you know helpful resources suitable for beginners, please open a pull-request
 
 [Codebar Tutorials](http://tutorials.codebar.io/)
 
+[How Does the Internet](https://shop.bubblesort.io/products/how-does-the-internet-zine) - "This zine explains how the internet works and how computers can send each other messages, via bad knock knock jokes, in 53 pages."
+
 
 ## Online interactive tutorials
 
