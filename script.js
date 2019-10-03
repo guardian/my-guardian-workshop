@@ -12,9 +12,9 @@ function addRowOfNews(rowSubject, numberOfItems) {
 }
 
 // This adds the top 3 articles from a content api search. Try changing "Technology" to something else.
-addRowOfNews("Autumn", 3);
-
 addRowOfNews("Technology", 3);
+
+addRowOfNews("Greta Thunberg", 3);
 
 
 // You could use the block below to add specific stories rather than just the top 3 from a certain topic
