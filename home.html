@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <html>
-<head>
+  <head>
     <!--This is the title of your page, which will appear in the name of the tab. Change it to anything you like! -->
     <title>My Guardian</title>
     <!--
@@ -13,71 +13,72 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body>
-
-<div class="col-md-12 header">
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-7">
-      <ul class="navigation">
-        <li><a class="news-pillar" href="https://www.theguardian.com/news">News</a></li>
-        <li><a class="opinion-pillar" href="https://www.theguardian.com/opinion">Opinion</li>
-        <li><a class="sport-pillar" href="https://www.theguardian.com/sport">Sport</li>
-        <li><a class="culture-pillar" href="https://www.theguardian.com/culture">Culture</li>
-        <li><a class="lifestyle-pillar" href="https://www.theguardian.com/lifestyle">Lifestyle</li>
-      </ul>
-    </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-2">
-        <div class="header-logo-container">
-      <!-- This is the text for the guardian logo. You can change it to anything you like. -->
-          My
-          Guardian
+  <body>
+    <div class="col-md-12 header">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+          <ul class="navigation">
+            <li><div class="news pillar"><a href="https://www.theguardian.com/news">News</a></div></li>
+            <li><div class="opinion pillar"><a href="https://www.theguardian.com/opinion">Opinion</a></div></li>
+            <li><div class="sport pillar"><a href="https://www.theguardian.com/sport">Sport</a></div></li>
+            <li><div class="culture pillar"><a href="https://www.theguardian.com/culture">Culture</a></div></li>
+            <li><div class="lifestyle pillar"><a href="https://www.theguardian.com/lifestyle">Lifestyle</a></div></li>
+          </ul>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <div class="header-logo-container">
+            <!-- This is the text for the guardian logo. You can change it to anything you like. -->
+            My<br> Guardian
+          </div>
+          <div class="tag-line">
+          <p> News website of the year</p>
+        </div>
+        </div>
       </div>
     </div>
-    </div>
-</div>
 
-<!-- this is the box of 3 articles   -->
-<script id="article-list" type="text/x-handlebars-template">
-<!-- this is the heading of the article box  -->
-<div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10">
-        <h2>{{ sectionName }}</h2>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="article-container col-md-12">
+    <!-- this is the box of 3 articles   -->
+    <script id="article-list" type="text/x-handlebars-template">
+      <!-- this is the heading of the article box  -->
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h2>{{sectionName}}</h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="article-container col-md-12">
             <div class="row">
-                <div class="col-md-1"></div>
-                {{#each articleList as |article|}}
+              <div class="col-md-1"></div>
+              {{#each articleList as |article|}}
                 <div class="col-md-3">
-                    <div class="thumbnail">
+                  <div class="thumbnail">
                     <!-- put the article image here  -->
 
-                        <div class="caption">
-                            <h3>
-                                <!-- this is the article headline  -->
-                                {{ article.headline }}
-                            </h3>
+                    <div class="caption">
+                      <h3>
+                        <!-- this is the article headline  -->
+                        {{article.headline}}
+                      </h3>
 
-                            <p>
-                                <!-- put the article trail text here -->
+                      <p>
+                        <!-- put the article trail text here -->
 
-                            </p>
-                        </div>
+                      </p>
                     </div>
+                  </div>
                 </div>
-                {{/each}}
+              {{/each}}
             </div>
+          </div>
         </div>
-    </div>
-</div>
-</script>
+      </div>
+    </script>
 
-<!--These are bits of code made by other people to help make the page look good and work properly-->
+    <!--These are bits of code made by other people to help make the page look good and work properly-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.0/handlebars.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -85,6 +86,5 @@
 <script type="text/javascript" src="uglyscript.js"></script>
 <!-- This is the code that you will edit today -->
 <script type="text/javascript" src="script.js"></script>
-
-</body>
+  </body>
 </html>

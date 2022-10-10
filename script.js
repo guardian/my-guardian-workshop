@@ -1,21 +1,24 @@
-function getInterestingFields(content){
-    return {
-        headline: content.fields.headline,
-        trailText: content.fields.trailText,
-        mainImage: content.fields.thumbnail
-    }
+function getInterestingFields(content) {
+  return {
+    headline: content.fields.headline,
+    trailText: content.fields.trailText,
+    mainImage: content.fields.thumbnail,
+  };
 }
 
 function addRowOfNews(rowSubject, numberOfItems) {
-    var contentApiQuery = encodeURIComponent(rowSubject);
-    return addContentList(rowSubject, "http://content.guardianapis.com/search?q=" + contentApiQuery, numberOfItems);
+  var contentApiQuery = encodeURIComponent(rowSubject);
+  return addContentList(
+    rowSubject,
+    "http://content.guardianapis.com/search?q=" + contentApiQuery,
+    numberOfItems
+  );
 }
 
 // This adds the top 3 articles from a content api search. Try changing "Technology" to something else.
 addRowOfNews("Technology", 3);
 
 addRowOfNews("Greta Thunberg", 3);
-
 
 // You could use the block below to add specific stories rather than just the top 3 from a certain topic
 // addContentItems("Selected News", [

@@ -1,24 +1,28 @@
-html *
-{
-   font-family: Georgia;
+html * {
+  font-family: Georgia;
 }
 
 .header {
-    width: 100%;
-    height: 100px;
-    background-color: #F6F6F6;
-    margin-top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #052962;
+  margin-top: 0;
 }
 
 .header-logo-container {
-    text-align: center;
-    margin-right: 5%;
-    font-size: 30pt;
-    line-height: 25pt;
-    margin-top: 5%;
-    color: black;
-    font-family: "Georgia";
-    font-weight: bold;
+  text-align: center;
+  margin-right: 5%;
+  font-size: 30pt;
+  line-height: 25pt;
+  margin-top: 5%;
+  color: #ffffff;
+  font-family: "Georgia";
+  font-weight: bold;
+}
+
+.tag-line {
+  text-align: center;
+  color: #FFE500
 }
 
 .navigation {
@@ -32,68 +36,74 @@ html *
 }
 
 .navigation a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-.news-pillar {
-  color: #C70007;
+.pillar a {
+  color: white;
 }
 
-.opinion-pillar {
-  color: #E05E00;
+.pillar {
+  border-top-style: solid;
+  border-top-color: transparent;
+  border-top-width: 5px;
 }
 
-.sport-pillar{
-  color: #0084C6;
+.pillar:hover {
+  border-top-style: solid;
 }
 
-.culture-pillar {
-  color: #A1845C;
+.news:hover {
+  border-color: #c70007;
 }
 
-.lifestyle-pillar {
-  color: #BB3B80;
+.opinion:hover {
+  border-color: #e05e00;
+}
+
+.sport:hover {
+  border-color: #0084c6;
+}
+
+.culture:hover {
+  border-color: #a1845c;
+}
+
+.lifestyle:hover {
+  border-color: #bb3b80;
 }
 
 h2 {
-    margin-left: 20px;
-    font-family: "Georgia";
-    color: black;
-    font-weight: bold;
+  margin-left: 20px;
+  font-family: "Georgia";
+  color: black;
+  font-weight: bold;
 }
 
-.fade
-{
-        opacity:1;
+.fade {
+  opacity: 1;
 }
 
-.fade:hover
-{
-        opacity:1;
+.fade:hover {
+  opacity: 1;
 }
 
-.color:hover
-{
-        background:#53a7ea;
+.color:hover {
+  background: #53a7ea;
 }
 
-.circle:hover
-{
-        border-radius:10%;
+.circle:hover {
+  border-radius: 10%;
 }
 
-.rotate:hover
-{
-        transform: rotateZ(-5deg);
+.rotate:hover {
+  transform: rotateZ(-5deg);
 }
 
-.shrink:hover
-{
-        transform: scale(0.5);
+.shrink:hover {
+  transform: scale(0.5);
 }
 
-.grow:hover
-{
-        transform: scale(1.3);
+.grow:hover {
+  transform: scale(1.3);
 }
